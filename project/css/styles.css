@@ -1,0 +1,220 @@
+
+
+.site{
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-rows: 15rem 2fr 1fr;
+  grid-template-columns: 0.7fr 8fr;
+  grid-template-areas: 
+        "header header header"
+        "Menu Center Center"
+        "footer footer footer";
+}
+
+
+header{
+grid-area: header;
+background-color: rgba(110, 109, 116, 0.76);
+background-image: url(https://i.pinimg.com/564x/a1/df/4a/a1df4afc1bee2a4a9de45f7f9c417048.jpg);
+background-size: cover;
+background-repeat: unset;
+width:100%;
+height: 22rem;
+margin-top: -4rem;
+}
+
+header > button{
+  margin-top: 20.7rem;
+}
+
+.Menu{
+grid-area: Menu;
+border-style: solid;
+border-color: rgba(0, 0, 0, 0.685);
+margin-top: 25%;
+margin-top: 4rem;
+
+}
+
+.TitreMenu{
+  border-style: solid;
+border-color: rgba(6, 6, 7, 0.685);
+}
+
+.Center{
+grid-area: Center;
+  background-color: rgba(126, 127, 128, 0.726);
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+
+footer{
+  grid-area: footer;
+  text-align: center;
+}
+
+#intro{
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 60px;
+  border-style: solid;
+  border-color: rgba(58, 58, 58, 0.685);
+  padding: 5px;
+  background-color: rgba(206, 141, 1, 0.76);
+}
+
+h1{
+  grid-template-columns: span 12;
+}
+
+/*----------------------------------------------------------------------------
+                         BODY 
+-----------------------------------------------------------------------------*/
+body
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-image: url(https://i.pinimg.com/236x/8b/2e/08/8b2e084871af46a27c5555f5e161c599.jpg);
+background-color: rgb(217, 225, 239 );
+color: black;
+display: grid;
+margin: 0;
+
+}
+
+.grille{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+        "dbz op naruto"
+        "kuroko bleach .";
+  width: 90%;
+}
+
+.Dbz{
+  grid-area: dbz;
+  border:rgba(85, 84, 84, 0.918);
+  margin: 30px;
+  padding: 10px;
+  border-style: solid;
+  text-align: center;
+}
+
+.OP{
+  grid-area: op;
+  border:rgba(85, 84, 84, 0.918);
+  border-style: solid;
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+
+}
+
+a{
+  color: rgb(28, 31, 37);
+}
+
+.bleach{
+  grid-area: bleach;
+  border:rgba(85, 84, 84, 0.918);
+  border-style: solid;
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+}
+
+.Naruto{
+  grid-area: naruto;
+  border:rgba(85, 84, 84, 0.918);
+  border-style: solid;
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+}
+
+.kuroko{
+  grid-area: kuroko;
+  border:rgba(85, 84, 84, 0.918);
+  border-style: solid;
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+}
+
+ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.liMenu{
+  background-color: rgb(8, 140, 228);
+  border:rgb(0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 2px;
+margin-left: 5px;}
+
+.intro{
+  font-size: 30px;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+}
+  @keyframes slidein {
+    from {
+      margin-left: 90%;
+      width: 200%; 
+      font-size: 200px;
+    }
+  
+    to {
+      margin-left: 20%;
+      width: 50%;
+    }
+  }
+
+@media screen and (max-width: 1000px){
+  
+  .site{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "Center"
+        "Menu"
+        "footer ";
+   grid-template-rows: minmax(15em , auto) ;
+   grid-template-columns: 8fr;
+   margin: 0;
+   margin-bottom: 1rem;
+  }
+
+  .grille{
+    grid-template-columns: 1fr 1fr;
+    grid-template-area: 
+    "dbz op "
+    "kuroko bleach"
+    "naruto .";
+    width: 50%;
+  }
+
+  .header{
+    width: 100%; 
+  }
+  .footer{
+    width: 100%;
+  }
+  .Center{
+    width: 100%;
+   
+  }
+
+}
+

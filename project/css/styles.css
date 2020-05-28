@@ -196,7 +196,7 @@ h1{
    margin-bottom: 1rem;
   }
 
-  .grille{
+  .grille{90
     grid-template-columns: 1fr 1fr;
     grid-template-area: 
     "dbz op "

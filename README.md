@@ -1,3 +1,2 @@
 # Test_web
-testing code web
-test ok
+add new pages css and dbz / new balise article wicht styles global for all other pages

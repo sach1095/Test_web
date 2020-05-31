@@ -10,7 +10,7 @@ header{
   margin-top: -4rem;
   }
 
-header > button{
+header > nav{
     margin-top: 20.7rem;
   }
 
@@ -37,8 +37,8 @@ img{
 border-color: rgba(6, 6, 7, 0.685);
 }
 
-.Center{
-grid-area: Center;
+section{
+grid-area: section;
   background-color: rgba(126, 127, 128, 0.726);
   margin-top: 4rem;
   margin-left: 1rem;
@@ -66,7 +66,7 @@ grid-template-rows: 15rem auto 1fr;
 grid-template-columns: 0.7fr 8fr;
 grid-template-areas: 
       "header header header"
-      "Menu Center Center"
+      "Menu section section"
       "footer footer footer";
 }
 
@@ -107,6 +107,7 @@ margin-left: 5px;}
   display: flex;
   flex-flow: column-reverse;
   margin: 0.5em;
+  margin-bottom: 1rem;
 
 }
 
@@ -116,7 +117,7 @@ margin-left: 5px;}
     display: grid;
     grid-template-areas: 
         "header"
-        "Center"
+        "section"
         "Menu"
         "footer ";
    grid-template-rows: minmax(15em , auto, auto, 10em) ;

@@ -2,16 +2,15 @@
 header{
   grid-area: header;
   background-color: rgba(110, 109, 116, 0.76);
-  background-image: url(https://i.pinimg.com/564x/a1/df/4a/a1df4afc1bee2a4a9de45f7f9c417048.jpg);
+  background-image: url(./ophaeder.jpg);
   background-size: cover;
   background-repeat: unset;
   width:100%;
-  height: 22rem;
-  margin-top: -4rem;
+  height: 20rem;
   }
 
 header > nav{
-    margin-top: 20.7rem;
+    margin-top: 18.7rem;
   }
 
 
@@ -20,7 +19,7 @@ header > nav{
    border-style: solid;
    border-color: rgba(0, 0, 0, 0.685);
    margin-top: 25%;
-   margin-top: 4rem;
+   margin-top: 5.5rem;
  }
 
 a{
@@ -40,7 +39,7 @@ border-color: rgba(6, 6, 7, 0.685);
 section{
 grid-area: section;
   background-color: rgba(126, 127, 128, 0.726);
-  margin-top: 4rem;
+  margin-top: 5.5rem;
   margin-left: 1rem;
 }
 

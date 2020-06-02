@@ -2,28 +2,44 @@
 header{
   grid-area: header;
   background-color: rgba(110, 109, 116, 0.76);
-  background-image: url(./ophaeder.jpg);
+  background-image: url(../assets/img/ophaeder.jpg);
   background-size: cover;
   background-repeat: unset;
   width:100%;
   height: 20rem;
   }
 
-header > nav{
+.header_nav{
     margin-top: 18.7rem;
   }
 
 
-.Menu{
-   grid-area: Menu;
+aside{
+   grid-area: aside;
    border-style: solid;
    border-color: rgba(0, 0, 0, 0.685);
    margin-top: 25%;
    margin-top: 5.5rem;
  }
 
+ .aside_ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.aside_ul-li{
+  background-color: rgb(8, 140, 228);
+  border:rgb(0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 2px;
+margin-left: 5px;}
+
+
 a{
   text-decoration: none;
+  color: rgb(28, 31, 37);
 }
 
 
@@ -31,7 +47,7 @@ img{
   max-width: 100%;
 }
 
-.TitreMenu{
+.aside_ul-h3{
   border-style: solid;
 border-color: rgba(6, 6, 7, 0.685);
 }
@@ -54,8 +70,7 @@ footer{
 body
 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-image: url(https://i.pinimg.com/236x/8b/2e/08/8b2e084871af46a27c5555f5e161c599.jpg);
-background-color: rgb(217, 225, 239 );
+background-color: rgb(215, 219, 226);
 color: black;
 margin: 0;
 display: grid;
@@ -65,31 +80,18 @@ grid-template-rows: 15rem auto 1fr;
 grid-template-columns: 0.7fr 8fr;
 grid-template-areas: 
       "header header header"
-      "Menu section section"
+      "aside section section"
       "footer footer footer";
 }
 
 
-ul{
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.liMenu{
-  background-color: rgb(8, 140, 228);
-  border:rgb(0, 0, 0);
-  border-width: 2px;
-  border-style: solid;
-  margin-bottom: 2px;
-margin-left: 5px;}
 
 .intro{
   font-size: 30px;
   text-align: center;
 }
 
-.titre{
+.section_article-div{
   border-style: solid;
   border-color: black;
   margin: 2rem;
@@ -102,7 +104,7 @@ margin-left: 5px;}
 }
 
 
-#reverse{
+.section_article-ul{
   display: flex;
   flex-flow: column-reverse;
   margin: 0.5em;

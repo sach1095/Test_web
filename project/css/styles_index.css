@@ -1,5 +1,5 @@
 
-  h1{
+  .section_h1{
     text-align: center;
     animation-duration: 3s;
     animation-name: slidein;
@@ -18,7 +18,7 @@
       width: 50%;
     }
   }
-  #intro{
+  .section_p{
     margin-top: 20px;
     margin-left: 30px;
     margin-right: 60px;
@@ -29,19 +29,19 @@
   }
 
 
-.grille{
+.section_grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-          "dbz op naruto"
-          "kuroko bleach .";
+          "block-1 block-2 block-3"
+          "block-4 block-5 .";
     width: 90%;
   }
 
 
-  .Dbz{
-    grid-area: dbz;
+  .section_grid_block-1{
+    grid-area: block-1;
     border:rgba(85, 84, 84, 0.918);
     margin: 30px;
     padding: 10px;
@@ -49,8 +49,8 @@
     text-align: center;
   }
   
-  .OP{
-    grid-area: op;
+  .section_grid_block-2{
+    grid-area: block-2;
     border:rgba(85, 84, 84, 0.918);
     border-style: solid;
     text-align: center;
@@ -59,12 +59,9 @@
   
   }
   
-  a{
-    color: rgb(28, 31, 37);
-  }
   
-  .bleach{
-    grid-area: bleach;
+  .section_grid_block-5{
+    grid-area: block-5;
     border:rgba(85, 84, 84, 0.918);
     border-style: solid;
     text-align: center;
@@ -72,8 +69,8 @@
     padding: 10px;
   }
   
-  .Naruto{
-    grid-area: naruto;
+  .section_grid_block-3{
+    grid-area: block-3;
     border:rgba(85, 84, 84, 0.918);
     border-style: solid;
     text-align: center;
@@ -81,8 +78,8 @@
     padding: 10px;
   }
   
-  .kuroko{
-    grid-area: kuroko;
+  .section_grid_block-4{
+    grid-area: block-4;
     border:rgba(85, 84, 84, 0.918);
     border-style: solid;
     text-align: center;
@@ -91,13 +88,13 @@
   }
 
   @media screen and (max-width: 1000px){
-    .grille{
+    .section_grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "dbz op "
-        "kuroko bleach"
-        "naruto .";
+        "block-1 block-2 "
+        "block-4 block-5"
+        "block-3 .";
         width: 100%;
       }
     

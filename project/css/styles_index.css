@@ -1,7 +1,7 @@
 
   .section_h1{
     text-align: center;
-    animation-duration: 3s;
+    animation-duration: 2.3s;
     animation-name: slidein;
     animation-iteration-count: initial;
     animation-direction: alternate;
@@ -9,12 +9,12 @@
   @keyframes slidein {
     from {
       margin-left: 90%;
-      width: 200%; 
-      font-size: 200px;
+      width: 50%; 
+      font-size: 50px;
     }
   
     to {
-      margin-left: 20%;
+      margin-left: 25%;
       width: 50%;
     }
   }

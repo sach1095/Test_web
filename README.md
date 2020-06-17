@@ -5,3 +5,4 @@ nouvelle integration screnn
 arrangement du site new header
 2/06/20: instal serv live , changement nom de class B.E.M , creation fichier assets, arrengement total du code.
 13/06/20: instal sass , command utile : ./dart-sass/sass ./css/sass/style.scss ./css/sass/style.css --watch , reactualisation du code pour sass.
+17/06/20: add pages , modif link for nes pages.
